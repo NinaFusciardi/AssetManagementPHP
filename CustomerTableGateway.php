@@ -40,7 +40,7 @@ class CustomerTableGateway {
         return $statement;
     }
     
-     public function insertCustomer($fn, $ln, $a, $m, $e, $bid) {
+    public function insertCustomer($fn, $ln, $a, $m, $e, $bid) {
         $sqlQuery = "INSERT INTO customer " .
                 "(fName, lName,  address, mobile, email, branchID) " .
                 "VALUES (:fName, :lName, :address, :mobile, :email, :branchID)";
@@ -66,7 +66,7 @@ class CustomerTableGateway {
         return $id;
     }
     
-      public function deleteCustomer($customerID) {
+    public function deleteCustomer($customerID) {
         $sqlQuery = "DELETE FROM customer WHERE customerID = :customerID";
 
         $statement = $this->connection->prepare($sqlQuery);

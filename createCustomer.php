@@ -48,5 +48,3 @@ if(empty($errorMessage)){
 else {
     require 'createCustomerForm.php';
 }
-
-

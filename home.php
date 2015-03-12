@@ -27,6 +27,7 @@ $statement = $gateway->getCustomers();
             echo '<p>'.$message.'</p>';
         }
         ?>
+        <p><a href="branchTable.php">Branch Table</a></p>
         <h1> Customer Details </h1>
             <?php 
             if (isset($message)) {
@@ -69,6 +70,8 @@ $statement = $gateway->getCustomers();
                     ?>
                 </tbody>
             </table>
-        <p><a href="createCustomerForm.php">Create Customer</a></p>  <!-- Link to the create customer form -->
+         
+        <p><a href="createCustomerForm.php">Create Customer</a></p> <!-- Link to the create customer form -->
+        <p><a href="createBranchForm.php">Create Branch</a></p> 
     </body>
 </html>
